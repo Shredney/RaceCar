@@ -34,7 +34,7 @@ public class RaceTrack {
 				}
 			}
 			index++;
-			Arrays.sort(raceCars.tijd);
+			Arrays.sort(raceCars.tijd); //<------------------------------------hoe doe je dit? op het internet doen ze er heel vaag over
 			// index2=0;
 			// finishOrder[index2].raceCars[index];
 			// index2++;
