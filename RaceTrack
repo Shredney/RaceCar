@@ -1,0 +1,48 @@
+package basisVanLes2;
+
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
+public class RaceTrack {
+	RaceCar[] raceCars = new RaceCar[5];
+	RaceCar[] finishOrder = new RaceCar[5];
+	int distance;
+	int index;
+	int index2;
+
+	void addRaceCar(RaceCar car) {
+		index = 0;
+		while (index <= raceCars.length) {
+			if (raceCars[index] == null) {
+				raceCars[index] = car;
+				index++;
+				break;
+			}
+
+		}
+		System.out.println("Race is vol");
+
+	}
+
+	void doRace() {
+		index = 0;
+		while (index <= raceCars.length) {
+			if (raceCars[index] != null) {
+				raceCars[index].race();
+				while (raceCars[index].location < distance) {
+						raceCars[index].tijd ++ ;
+				}
+			}
+			index++;
+			Arrays.sort(raceCars.tijd);
+			// index2=0;
+			// finishOrder[index2].raceCars[index];
+			// index2++;
+		}
+	}
+
+	void setDistance(int newDistance) {
+
+	}
+
+}
